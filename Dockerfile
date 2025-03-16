@@ -1,9 +1,9 @@
 # stage 1
-FROM golang:1.21 as base
+FROM golang:1.22 as base
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
+COPY go.mod .
 
 RUN go mod download
 
